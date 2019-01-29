@@ -1,10 +1,10 @@
 #coding:utf-8
 import unittest
 import json
-import HTMLTestRunner
+from . import HTMLTestRunner
 from mock import mock
-from demo import RunMain
-from mock_demo import mock_test
+from .demo import RunMain
+from .mock_demo import mock_test
 class TestMethod(unittest.TestCase):
 	def setUp(self):
 		self.run=RunMain()
@@ -23,9 +23,9 @@ class TestMethod(unittest.TestCase):
 		res = mock_test(self.run.run_main,data,url,"POST",data)
 		#res = self.run.run_main(url,'POST',data)
 
-		print res
+		print(res)
 		self.assertEqual(res['errorCode'],1001,"测试失败")
-		print "这是第一个case"
+		print("这是第一个case")
 
 	#@unittest.skip('test_02')	
 	def test_02(self):
@@ -42,7 +42,7 @@ class TestMethod(unittest.TestCase):
 
 		res = self.run.run_main(url,'POST',data)
 		self.assertEqual(res['errorCode'],1001,"测试失败")
-		print "这是第二个case"
+		print("这是第二个case")
 		#mock
 
 if __name__ == '__main__':

@@ -17,7 +17,7 @@ class OperetionJson:
 
 	#根据关键字获取数据
 	def get_data(self,id):
-		print type(self.data)
+		print(type(self.data))
 		return self.data[id]
 
 	#写json
@@ -29,4 +29,4 @@ class OperetionJson:
 
 if __name__ == '__main__':
 	opjson = OperetionJson()
-	print opjson.get_data('shop')
+	print(opjson.get_data('shop'))

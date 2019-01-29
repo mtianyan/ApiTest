@@ -24,6 +24,6 @@ if __name__ == '__main__':
 		'cart':'11'
 	}
 	run = RunMain(url,'GET',data)
-	print run.res
+	print(run.res)
 	unittest
 	#print run.run_main(url,'GET',data)

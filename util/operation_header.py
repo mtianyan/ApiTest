@@ -1,7 +1,7 @@
 #coding:utf-8
 import requests
 import json
-from operation_json import OperetionJson
+from .operation_json import OperetionJson
 
 
 class OperationHeader:

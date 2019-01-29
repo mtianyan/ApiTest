@@ -24,4 +24,4 @@ class OperationMysql:
 if __name__ == '__main__':
 	op_mysql = OperationMysql()
 	res = op_mysql.search_one("select * from web_user where Name='mushishi'")
-	print res
+	print(res)
